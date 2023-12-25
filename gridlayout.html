@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            gap: 5px;
+            height: 100vh;
+        }
+
+        .grid-header {
+            background-color: slategray;
+            grid-column: 1/13;
+        }
+
+        .grid-nav {
+            background-color: antiquewhite;
+            grid-column: 1/4;
+            grid-row: 2/12;
+        }
+
+        .grid-title {
+            background-color: red;
+            grid-column: 4/13;
+        }
+
+        .grid-article1 {
+            background-color: blue;
+            grid-column: 4/7;
+            grid-row: 3/12;
+        }
+
+        .grid-article2 {
+            background-color: blue;
+            grid-column: 7/10;
+            grid-row: 3/12;
+        }
+
+        .grid-article3 {
+            background-color: blue;
+            grid-column: 10/13;
+            grid-row: 3/12;
+        }
+
+        .grid-footer {
+            background-color: yellow;
+            grid-column: 1/13;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-header">header</div>
+        <div class="grid-nav">nav</div>
+        <div class="grid-title">title</div>
+        <div class="grid-article1">article1</div>
+        <div class="grid-article2">article2</div>
+        <div class="grid-article3">article3</div>
+        <div class="grid-footer">footer</div>
+    </div>
+
+</body>
+
+</html>
